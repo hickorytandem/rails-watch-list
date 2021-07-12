@@ -25,7 +25,7 @@ response['results'].each do |movie_hash|
   )
 end
 
-genres = ["horror", "comedy" "romcom", "splatter", "art house", "indie"]
+genres = ["horror", "comedy", "romcom", "splatter", "art house", "indie"]
 genres.each_with_index do |genre|
   list = List.create!(
     name: genre

@@ -1,2 +1,9 @@
-<h1>Michael cries on this page. This is his sorrow</h1>
+<h1>Movie list for the bored at heart.</h1>
 
+<% @lists.each do |list| %>
+<div class="card">
+  <h2><%= link_to list.name, list_path(list) %></h2>
+<% end %>
+</div>
+
+<h1><%= link_to "Create list", new_list_path %></h1>
