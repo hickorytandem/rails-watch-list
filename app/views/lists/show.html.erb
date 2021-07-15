@@ -1,7 +1,13 @@
 <h1><%= @list.name %></h1>
+<% if @list.photo.attached?%>
+  <%= cl_image_tag @list.photo.key %>
+  <% else %>
+  <p> No image available</p>
+  <% end %>
 <h2> Bookmarks </h2>
 <% @list.bookmarks.each do |bookmark| %>
 <%= bookmark.comment %>
 <%= bookmark.movie.title %>
 <% end %>
 <h1><%= link_to "Create bookmark", new_list_bookmark_path(@list) %></h1>
+<h1><%= link_to "Back to lists", root_path %></h1>

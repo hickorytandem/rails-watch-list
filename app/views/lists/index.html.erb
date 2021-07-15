@@ -1,5 +1,9 @@
 <h1>Movie list for the bored at heart.</h1>
 
+<p><%= cl_image_tag("vladimir-fedotov--w-V5GRG9-0-unsplash_1_ok4dbk",
+      width: 400, height: 300, crop: :fill) %></p>
+
+
 <% @lists.each do |list| %>
 <div class="card">
   <h2><%= link_to list.name, list_path(list) %></h2>

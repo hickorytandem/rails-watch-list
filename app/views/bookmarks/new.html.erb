@@ -3,5 +3,5 @@
 <%= simple_form_for [ @list, @bookmark ] do |f| %>
   <%= f.input :comment %>
   <%= f.association :movie %>
-  <%= f.submit "Choose movie", class: "btn btn-primary" %>
+  <%= f.submit "Make bookmark", class: "btn btn-primary" %>
 <% end %>
