@@ -1,13 +1,14 @@
+<div class="title">
 <h1>Movie list for the bored at heart.</h1>
+</div>
 
-<p><%= cl_image_tag("vladimir-fedotov--w-V5GRG9-0-unsplash_1_ok4dbk",
-      width: 400, height: 300, crop: :fill) %></p>
+<div class="banner"><%= cl_image_tag("vladimir-fedotov--w-V5GRG9-0-unsplash_1_ok4dbk",
+      width: 400, height: 300, crop: :fill) %></div>
 
 
 <% @lists.each do |list| %>
 <div class="card">
   <h2><%= link_to list.name, list_path(list) %></h2>
-<% end %>
 </div>
-
-<h1><%= link_to "Create list", new_list_path %></h1>
+<% end %>
+<h1 class="footer"><%= link_to "Create list", new_list_path %></h1>

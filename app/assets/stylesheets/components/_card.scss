@@ -4,9 +4,22 @@
   background-color: pink;
 }
 
-.p {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 50%;
+.banner {
+  display: flex;
+  justify-content: center;
+  padding: 16px;
+}
+
+.title {
+  color: red;
+  background-color: pink;
+  text-align: center;
+}
+
+h1 {
+  background-color: lightblue;
+}
+
+.footer {
+  text-align: center
 }
